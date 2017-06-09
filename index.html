@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Сайт на бутстрапе</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    	<link href="css/sidebar.css" rel="stylesheet">
+    	<link href="css/sidebar-bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<div class="container">
+					<div class="row">
+						<div class="h-panel clearfix">
+							<nav class="h-nav h-nav-tabs">
+								<a href="#" class="active">Интернет-магазин</a>
+								<a href="#">О компании</a>
+							</nav>
+							<nav class="h-nav h-nav-center">
+								<a href="#">Акции</a>
+								<a href="#">Дисконтная система</a>
+								<a href="#">Адреса и контакты</a>
+								<a href="#">Доставка и оплата</a>
+							</nav>
+							<nav class="h-nav pull-right">
+								<a href="#"><i class="ic-time"></i><span class="hidden-xxs">Проверить заказ</span></a>
+								<a href="#"><i class="ic-user"></i><span class="hidden-xxs">Личный кабинет</span></a>
+							</nav>
+						</div>
+					</div>
+				</div>	
+				<div class="header-bottom">
+					<div class="container">	
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-3 col-xs-4 col-xxs-6">
+								<div class="logo">
+									<a href="#"><img src="img/logo.png" height="59" width="238" alt="logo"></a>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-5 col-sm-5 col-xs-6 col-xxs-3">
+								<form action="#" id="h-search">
+									<input type="text" value="Поиск по сайту" />
+									<input type="submit" value=""/>
+									<a href="#" class="h-search_close">x</a>
+								</form>
+								<a href="#" class="h-search_link">&nbsp;</a>
+							</div> 
+							<div class="col-lg-3 col-md-3 col-sm-4 col-xs-2 col-xxs-3">
+								<div class="dropdown h-phone">
+  									<a href="#" data-toggle="dropdown">
+  										<small>Бесплатно по всей России</small>
+  										<span>8 800 234-56-23<i class="ic-arrow-down"></i></span>
+  									</a>
+  									<ul class="dropdown-menu arrow">
+    									<li><a href="#">Заказать обратный звонок</a></li>
+    									<li><a href="#">Форма обратной связи</a></li>
+  									</ul>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</div>
+			</header>
+
+			<div class="panel">
+				<div class="container">
+					<div class="row">
+						<ul class="panel-menu-wrap clearfix">
+							<li>
+								<a href="#" class="btn btn-menu"><i class="ic-list"></i>Каталог товаров <i class="ic-arrow-down-white"></i></a>
+								<ul class="panel-menu arrow" style="display: none;">
+									<li class="close-menu"><a href="#">&larr;</a></li>
+	                        		<li><a href="#">Смартфоны <i class="ic-arrow-right"></i></a></li>
+	                        		<li><a href="#">Компьютеры <i class="ic-arrow-right"></i></a></li>
+	                        		<li><a href="#">Видеорегистраторы <i class="ic-arrow-right"></i></a></li>
+	                        		<li><a href="#">Умные часы и браслеты <i class="ic-arrow-right"></i></a></li>
+	                        		<li><a href="#">Компьютерная переферия <i class="ic-arrow-right"></i></a></li>
+	                        		<li><a href="#">Видеокамеры <i class="ic-arrow-right"></i></a></li>
+	                        		<li class="selected">
+	                            <a href="#">Фотоаппараты <i class="ic-arrow-right"></i></a>
+	                            <ul>   
+	                                <li><a href="#">Компактные <i class="ic-arrow-right"></i></a></li>
+	                                <li><a href="#">Продвинутые компакты <i class="ic-arrow-right"></i></a></li>
+	                                <li><a href="#">Ультразумы <i class="ic-arrow-right"></i></a></li>
+	                                <li class="selected">
+	                                    <a href="#">Зеркальные <i class="ic-arrow-right"></i></a>
+	                                    <ul>
+	                                        <li><a href="#">Canon <i class="ic-arrow-right"></i></a></li>
+	                                        <li><a href="#">Nikon <i class="ic-arrow-right"></i></a></li>
+	                                        <li><a href="#">Leica <i class="ic-arrow-right"></i></a></li>
+	                                        <li><a href="#">Pentax <i class="ic-arrow-right"></i></a></li>
+	                                        <li><a href="#">Sigma <i class="ic-arrow-right"></i></a></li>
+	                                        <li><a href="#">Sony <i class="ic-arrow-right"></i></a></li>
+	                                        <li><a href="#">Все бренды <i class="ic-arrow-right"></i></a></li>
+	                                    </ul>
+	                                </li>
+	                                <li><a href="#">Среднеформатные фотоаппараты <i class="ic-arrow-right"></i></a></li>
+	                                <li><a href="#">Беззеркальные камеры <i class="ic-arrow-right"></i></a></li>
+	                            </ul>
+
+	                        </li>
+	                            <li><a href="#">Экшн-камеры <i class="ic-arrow-right"></i></a></li>
+	                            <li><a href="#"> <i class="ic-arrow-right"></i></a></li>
+	                            <li><a href="#">Квадрокоптеры <i class="ic-arrow-right"></i></a></li>
+	                            <li><a href="#">Бинокли <i class="ic-arrow-right"></i></a></li>
+	                            <li><a href="#">Компьютерные комплектующие <i class="ic-arrow-right"></i></a></li>
+	                            <li><a href="#">Телевизоры <i class="ic-arrow-right"></i></a></li>
+	                            <li><a href="#">Блоки питания <i class="ic-arrow-right"></i></a></li>
+	                            <li><a href="#">Аксессуары <i class="ic-arrow-right"></i></a></li>
+								<li class="divider"></li>
+								<li class="sale"><a href="#"><strong>Распродажа</strong></a></li>  
+                    			</ul>
+							</li>
+							<li><span class="sp">Зеркальные фотоаппараты<i class="ic-arrow-down-white"></i></span></li>
+							<li><span class="sp">Canon<i class="ic-arrow-down-white"></i></span></li>
+                    	</ul>
+                    	<a href="#" class="btn btn-basket pull-right"><i class="ic-basket"></i> <span class="hidden-xxs">Корзина</span></a>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="sorting">
+							<label>Сортировать по</label>
+							<select>
+								<option value="По популярности">Популярности</option>
+								<option value="По рейтингу">рейтингу</option>
+								<option value="По загрузке">загрузке</option>
+								<option value="По дате">дате</option>
+							</select>
+							<div class="btn-group">
+								<button type="button" class="btn btn-default active hidden-xxs">
+									<span class="glyphicon glyphicon-th"></span>
+								</button>
+								<button type="button" class="btn btn-default hidden-xxs">
+									<span class="glyphicon glyphicon-th-list"></span>
+								</button>
+							</div>
+						</div>
+						<h1 class="main-title">Фотоаппараты Canon</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row  relative">
+			<!-- SIDEBAR -->
+		            <div data-sidebar="true" data-force-toggle="true" data-locked="true"
+		                data-hammer-scrollbar="true" class="sidebar-trigger sidebar-force-open sidebar-locked">
+		               	<a class="sidebar-toggle" href="#">
+		                   <span class="sr-only">Sidebar toggle</span>
+		                   <i class="fa fa-sidebar-toggle"></i>
+		                </a>
+
+						<div class="sidebar-wrapper sidebar-default sidebar-open-init">
+							<div class="sidebr-item">
+								<h5 class="sidebar-title">Категории</h5>
+								<ul class="sidebar-list">
+									<li><a href="#">Фотоаппараты</a></li>
+									<li><a href="#">Экшн-камеры</a></li>
+									<li><a href="#">Видеорегистраторы</a></li>
+									<li><a href="#">Видеокамеры</a></li>
+									<li><a href="#">Квадрокоптеры</a></li>
+								</ul>
+							</div>
+
+							<div class="sidebr-item">
+								<h5 class="sidebar-title">Цена</h5>
+								<div class="sl-slider">
+									<label for="amount">от</label>
+									<input id="amount" type="text">
+									<label for="amount_1">до</label>
+									<input id="amount_1" type="text">
+									<label for="amount_1">руб.</label>
+								</div>
+								<div id="slider-range"></div>
+							</div>
+
+							<div class="sidebr-item">
+								<h5 class="sidebar-title">Производитель</h5>
+								<ul class="sidebar-list-check bl-x2 clearfix">
+									<li><input id="foto" type="checkbox">
+										<label for="foto">Canon</label>
+									</li>
+									<li><input id="foto1" type="checkbox">
+										<label for="foto1">Nikon</label>
+									</li>
+									<li><input id="foto2" type="checkbox">
+										<label for="foto2">Leica</label>
+									</li>
+									<li><input id="med3" type="checkbox">
+										<label for="med3">Pentax</label>
+									</li>
+									<li><input id="med4" type="checkbox">
+										<label for="med4">Samsung</label>
+									</li>
+									<li><input id="med5" type="checkbox">
+										<label for="med5">Sony</label>
+									</li>
+									<li><input id="med6" type="checkbox">
+										<label for="med6">Xiaomi</label>
+									</li>
+									<li><input id="med7" type="checkbox">
+										<label for="med7">Все бренды</label>
+									</li>
+								</ul>
+								<a href="#" class="more"><span class="plus">+</span> Еще <span>3</span></a>
+							</div>
+							<div class="sidebr-item">
+								<h5 class="sidebar-title">Стабилизатор изображения</h5>
+								<ul class="sidebar-list-check clearfix">
+									<li><input id="foto11" type="checkbox">
+										<label for="foto11">оптический</label>
+									</li>
+									<li><input id="foto12" type="checkbox">
+										<label for="foto12">цифровой</label>
+									</li>
+									<li><input id="foto13" type="checkbox">
+										<label for="foto13">двойной</label>
+									</li>
+									<li><input id="foto14" type="checkbox">
+										<label for="foto14">отсутствует</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 content">
+								<div class="row product-wrap">
+									<div class="col-md-4 col-sm-6 product">
+										<div class="product-img">
+											<a href="#"><img src="img/img1.jpg" height="218" width="218" alt="Canon"></a>
+											<span class="review">Быстрый просмотр</span>
+										</div>
+										<div class="product-footer">
+											<h5><a href="#">Canon EOS 60D Kit</a></h5>
+											<span class="cat">Canon, Япония</span>
+										</div>
+										<span class="price">38 000 руб.</span>
+									</div>
+									<div class="col-md-4 col-sm-6 product">
+										<div class="product-img">
+											<a href="#"><img src="img/img2.jpg" height="218" width="218" alt="Canon"></a>
+										</div>
+										<div class="product-footer">
+											<h5><a href="#">Canon EOS 700D Kit</a></h5>
+											<span class="cat">Canon, Япония</span>
+										</div>
+										<span class="price">35 000 руб.</span>
+									</div>
+									<div class="col-md-4 col-sm-6 product">
+										<div class="product-img">
+											<a href="#"><img src="img/img3.jpg" height="218" width="218" alt="Canon"></a>
+										</div>
+										<div class="product-footer">
+											<h5><a href="#">Canon EOS 70D Kit</a></h5>
+											<span class="cat">Canon, Япония</span>
+										</div>
+										<span class="price">58 500 руб.</span>
+									</div>
+									<div class="col-md-4 col-sm-6 product">
+										<div class="product-img">
+											<a href="#"><img src="img/img4.jpg" height="218" width="218" alt="Canon"></a>
+										</div>
+										<div class="product-footer">
+											<h5><a href="#">Canon EOS 5D Mark IV Body</a></h5>
+											<span class="cat">Canon, Япония</span>
+										</div>
+										<span class="price">115 900 руб.</span>
+									</div>
+									<div class="col-md-4 col-sm-6 product">
+										<div class="product-img">
+											<a href="#"><img src="img/img5.jpg" height="218" width="218" alt="Canon"></a>
+										</div>
+										<div class="product-footer">
+											<h5><a href="#">Canon EOS 750D Kit</a></h5>
+											<span class="cat">Canon, Китай</span>
+										</div>
+										<span class="price">41 000 руб.</span>
+									</div>
+									<div class="col-md-4 col-sm-6 product">
+										<div class="product-img">
+											<a href="#"><img src="img/img6.jpg" height="218" width="218" alt="Canon"></a>
+										</div>
+										<div class="product-footer">
+											<h5><a href="#">Canon EOS 80D Body</a></h5>
+											<span class="cat">Canon, Япония</span>
+										</div>
+										<span class="price">63 500 руб.</span>
+									</div>
+									<div class="col-md-4 col-sm-6 product">
+										<div class="product-img">
+											<a href="#"><img src="img/img7.jpg" height="218" width="218" alt="Canon"></a>
+										</div>
+										<div class="product-footer">
+											<h5><a href="#">Canon EOS 6D Body</a></h5>
+											<span class="cat">Canon, Япония</span>
+										</div>
+										<span class="price">85 990 руб.</span>
+									</div>
+									<div class="col-md-4 col-sm-6 product">
+										<div class="product-img">
+											<a href="#"><img src="img/img8.jpg" height="218" width="218" alt="Canon"></a>
+										</div>
+										<div class="product-footer">
+											<h5><a href="#">Canon EOS 80D Kit</a></h5>
+											<span class="cat">Canon, Китай</span>
+										</div>
+										<span class="price">76 500 руб.</span>
+									</div>
+									<div class="col-md-4 col-sm-6 product">
+										<div class="product-img">
+											<a href="#"><img src="img/img9.jpg" height="218" width="218" alt="Canon"></a>
+										</div>
+										<div class="product-footer">
+											<h5><a href="#">Canon EOS 77D Kit</a></h5>
+											<span class="cat">Canon, Япония</span>
+										</div>
+										<span class="price">66 100 руб.</span>
+									</div>
+								</div>
+								<div class="text-center">
+									<a href="#" class="btn-more"><i></i>Показать еще 30</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer id="footer">
+				<div class="subscription">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7 col-sm-6">
+								<h4 class="subscription_title clearfix"><i class="gift"></i>Подпишитесь на новинки, скидки, предложения</h4>
+							</div>
+							<div class="col-md-5 col-sm-6">
+								<form action="#" class="clearfix">
+									<input type="text" placeholder="Адрес электронной почты">
+									<input type="submit" value="Подписаться">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer_top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<h4 class="footer_title"><a href="#">Корпоративный сайт &#8250;<i class="arrow-right"></i></a></h4>
+								<nav class="footer_nav">
+									<ul class="list-unstyled">
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Контакты</a></li>
+										<li><a href="#">Партнерам</a></li>
+										<li><a href="#">Вакансии</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<h4 class="footer_title"><a href="#">Интернет-Магазин &#8250;<i class="arrow-right"></i></a></h4>
+								<nav class="footer_nav">
+									<ul class="list-unstyled">
+										<li><a href="#">Каталог</a></li>
+										<li><a href="#">Доставка и оплата</a></li>
+										<li><a href="#">Гарантия и возврат</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">Акции</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<h4 class="footer_title"><a href="#">Личный кабинет &#8250;<i class="arrow-right"></i></a></h4>
+								<nav class="footer_nav">
+									<ul class="list-unstyled">
+										<li><a href="#">Индивидуальные новости и акции</a></li>
+										<li><a href="#">История заказов</a></li>
+										<li><a href="#">Смена пароля</a></li>
+										<li><a href="#">Личные данные и адрес доставки</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<h4 class="footer_title"><a href="#">Остались вопросы ?<i class="arrow-right"></i></a></h4>
+								<p class="footer_phone">8 800 234-56-23</p>
+								<nav class="footer_nav">
+									<ul class="list-unstyled">
+										<li><a href="#">Обратный звонок</a></li>
+										<li><a href="#">Форма обратной связи</a></li>
+									</ul>
+								</nav>
+								<h5 class="footer_title mt-lg">Мы в социальных сетях</h5>
+								<div class="social">
+									<a href="" class="social_link social_link_fb">&nbsp;</a>
+									<a href="" class="social_link social_link_google">&nbsp;</a>
+									<a href="" class="social_link social_link_tw">&nbsp;</a>
+									<a href="" class="social_link social_link_vk">&nbsp;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="copy">
+					<div class="container">
+						<p class="copy text-center">&copy; Компания "" 2017. Все права защищены.</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.1.3/hammer.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="js/sidebar.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<!--  Стилизованый селект -->
+    	<script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+   		<script type="text/javascript">
+        	$(document).ready(function(){
+            	/* select style */
+            	var params = {
+                	changedEl: "select",
+                	visRows: 5,
+                	scrollArrows: true
+            	}
+            	cuSel(params);
+
+            	$('.close-menu').click(function(event) {
+            		$('.panel-menu').hide();
+            	});
+
+            	$('.h-search_link').click(function() {
+            		$('#h-search').animate({
+            			top:'20px'
+            			},400);
+            		
+            	});
+
+            	$('.h-search_close').click(function() {
+            		$('#h-search').animate({
+            			top:'-90px'
+            			},400);
+            		
+            	});
+
+
+        	});
+    	</script>
+		<script type="text/javascript" src="js/my.js"></script>
+	</body>
+</html>
